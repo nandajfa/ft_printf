@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_d_i.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 08:30:51 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/03 19:55:13 by jefernan         ###   ########.fr       */
+/*   Created: 2021/12/03 23:47:31 by jefernan          #+#    #+#             */
+/*   Updated: 2021/12/03 19:54:32 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include "libft/libft.h"
-# include <stdarg.h>
+int	ft_print_d_i(int nbr)
+{
+	char	*num;
+	int		len;
 
-int printf(const char *format, ...);
-int	ft_print_str(char *str);
-int	ft_print_d_i(int nbr);
-
-#endif
+	if (nbr == 0)
+		return (write(1, "0", 1));
+	len = 0;
+	num = ft_itoa(nbr);
+	len = ft_print_str(nbr);
+	return (len);
+}

@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_str.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 08:30:51 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/03 19:55:13 by jefernan         ###   ########.fr       */
+/*   Created: 2021/12/03 18:57:18 by jefernan          #+#    #+#             */
+/*   Updated: 2021/12/03 18:57:30 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include "libft/libft.h"
-# include <stdarg.h>
+int	ft_print_str(char *str)
+{
+	int	i;
 
-int printf(const char *format, ...);
-int	ft_print_str(char *str);
-int	ft_print_d_i(int nbr);
-
-#endif
+	i = 0;
+	while (str[i])
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+	return (i);
+}
