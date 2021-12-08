@@ -6,14 +6,14 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 08:30:51 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/08 18:01:31 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/08 18:08:30 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "libft/libft.h"
+# include "./libft/libft.h"
 # include <stdarg.h>
 
 int ft_printf(const char *format, ...);
