@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_d_i.c                                     :+:      :+:    :+:   */
+/*   ft_print_unsigned.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 23:47:31 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/06 09:53:40 by jefernan         ###   ########.fr       */
+/*   Created: 2021/12/06 09:40:24 by jefernan          #+#    #+#             */
+/*   Updated: 2021/12/06 09:53:28 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_d_i(int nbr)
+int	ft_print_unsigned(unsigned int nbr)
 {
-	char	*num;
+	char	*str;
 	int		len;
 
 	if (nbr == 0)
 		return (write(1, "0", 1));
 	len = 0;
-	num = ft_itoa(nbr);
+	str = ft_uitoa(nbr);
 	len = ft_print_str(nbr);
-	free(num);
+	free(str);
 	return (len);
 }
