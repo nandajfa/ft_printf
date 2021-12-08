@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 08:30:51 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/06 10:23:40 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/08 17:18:25 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,7 @@ int printf(const char *format, ...);
 int	ft_print_str(char *str);
 int	ft_print_d_i(int nbr);
 int	ft_print_unsigned(unsigned int nbr);
+int	ft_print_hex(unsigned long int n, char *hexa);
+int	ft_print_ptr(unsigned long int ptr);
 
 #endif

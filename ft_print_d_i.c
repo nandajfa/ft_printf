@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 23:47:31 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/06 09:53:40 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/08 17:14:53 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 int	ft_print_d_i(int nbr)
 {
-	char	*num;
+	char	*str;
 	int		len;
 
 	if (nbr == 0)
 		return (write(1, "0", 1));
 	len = 0;
-	num = ft_itoa(nbr);
-	len = ft_print_str(nbr);
-	free(num);
+	str = ft_itoa(nbr);
+	len += write(1, str, ft_strlen(str));
+	free(str);
 	return (len);
 }

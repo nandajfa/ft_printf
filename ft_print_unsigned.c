@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 09:40:24 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/06 09:53:28 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/08 17:17:40 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_print_unsigned(unsigned int nbr)
 		return (write(1, "0", 1));
 	len = 0;
 	str = ft_uitoa(nbr);
-	len = ft_print_str(nbr);
+	len = ft_print_str(str);
 	free(str);
 	return (len);
 }
