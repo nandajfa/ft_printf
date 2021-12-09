@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 08:30:51 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/09 14:34:04 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/09 17:16:21 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-int ft_printf(const char *format, ...);
+int	ft_printf(const char *format, ...);
 int	ft_print_str(char *str);
 int	ft_print_d_i(int nbr);
 int	ft_print_unsigned(unsigned int nbr);

@@ -6,7 +6,7 @@
 #    By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/30 10:34:38 by jefernan          #+#    #+#              #
-#    Updated: 2021/12/08 17:53:11 by jefernan         ###   ########.fr        #
+#    Updated: 2021/12/09 17:05:06 by jefernan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,8 @@ OBJS	= ${SRCS:.c=.o}
 
 RM		=	rm -f
 
-%.o:	%.c
-			${CC} -c $(CFLAGS) $<
+.c.o:
+			${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 all:		${NAME}
 

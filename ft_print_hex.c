@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 09:40:31 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/09 14:44:54 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/09 17:13:50 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,11 @@ int	ft_print_hex(unsigned long int n, char *hexa)
 	int					count;
 	char				*str;
 
-	str = NULL;
 	if (n == 0)
-        return (write(1, "0", 1));
+		return (write(1, "0", 1));
 	count = ft_count(n);
 	num = n;
-	str = (char *)ft_calloc((count + 1), sizeof(char));
+	str = malloc ((count + 1) * sizeof (char));
 	if (!str)
 		return (0);
 	str[count] = '\0';
