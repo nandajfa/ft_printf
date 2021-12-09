@@ -2,6 +2,9 @@
 
 int main(void)
 {
-	ft_printf("Hello World");
+	char *s;
+	s = "familia";
+
+	ft_printf("%p\n", s);
 	return (0);
 }

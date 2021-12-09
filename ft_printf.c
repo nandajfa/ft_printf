@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 08:30:47 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/08 17:50:55 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/09 09:07:38 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_printf(const char *format, ...)
 	{
 		if (*format == '%' && ft_strchr("cspdiuxX%", *(format + 1)))
 		{
-			len += ft_print_flags(format, ap);
+			len += ft_print_flags(++format, ap);
 			format++;
 		}
 		else
@@ -56,9 +56,9 @@ int	ft_print_flags(const char *format, va_list ap)
 	else if (*format == 'u')
 		return (ft_print_unsigned(va_arg(ap, unsigned int)));
 	else if (*format == 'x')
-		return (ft_print_hex(va_arg(ap, unsigned int), "0123456789abcdef"));
+		return (ft_print_hex(va_arg(ap, unsigned long), "0123456789abcdef"));
 	else if (*format == 'X')
-		return (ft_print_hex(va_arg(ap, unsigned int), "0123456789ABCDEF"));
+		return (ft_print_hex(va_arg(ap, unsigned long), "0123456789ABCDEF"));
 	else if (*format == '%')
 		return (write(1, format, 1));
 	else
