@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 09:40:31 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/09 09:20:47 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/09 14:44:54 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int	ft_print_hex(unsigned long int n, char *hexa)
 	int					count;
 	char				*str;
 
+	str = NULL;
 	if (n == 0)
         return (write(1, "0", 1));
 	count = ft_count(n);
@@ -39,10 +40,9 @@ int	ft_print_hex(unsigned long int n, char *hexa)
 	if (!str)
 		return (0);
 	str[count] = '\0';
-	count--;
 	while (num)
 	{
-		str[count--] = hexa[num % 16];
+		str[--count] = hexa[num % 16];
 		num /= 16;
 	}
 	write(1, str, ft_strlen(str));
