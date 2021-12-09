@@ -6,13 +6,13 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 09:40:31 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/09 09:06:24 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/09 09:20:47 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_count(unsigned long n)
+static int	ft_count(unsigned long int n)
 {
 	int	i;
 
@@ -25,7 +25,7 @@ static int	ft_count(unsigned long n)
 	return (i);
 }
 
-int	ft_print_hex(unsigned long n, char *hexa)
+int	ft_print_hex(unsigned long int n, char *hexa)
 {
 	unsigned long int	num;
 	int					count;

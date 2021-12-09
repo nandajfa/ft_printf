@@ -6,13 +6,13 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 09:40:31 by jefernan          #+#    #+#             */
-/*   Updated: 2021/12/09 09:14:22 by jefernan         ###   ########.fr       */
+/*   Updated: 2021/12/09 09:20:36 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_ptr(unsigned long ptr)
+int	ft_print_ptr(unsigned long int ptr)
 {
 	unsigned int len;
 
