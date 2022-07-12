@@ -42,7 +42,7 @@ The key to a successful ft_printf is a well-structured and good extensible code.
 * [Shell](https://unixguide.readthedocs.io/en/latest/unixcheatsheet/)
 * [gcc](https://terminaldeinformacao.com/2015/10/08/como-instalar-e-configurar-o-gcc-no-windows-mingw/)
 
- ## Autor
+ ## Auhtor
 
 Jessica Fernanda Alves Marques
 
