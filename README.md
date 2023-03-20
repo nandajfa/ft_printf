@@ -1,9 +1,13 @@
 <h1 align="center">
-	42cursus' printf
+	<img alt="badge printf" src="./ft_printf_dark.svg" />
  </h1>
  
+  <div align="center">
+  
  [![NPM](https://img.shields.io/npm/l/react)](https://github.com/nandajfa/ft_printf/blob/main/LICENSE)
  
+  </div>
+  
    ## 🗣️ About
 
 > _This project is pretty straight forward. You will recode printf. Hopefully you
@@ -42,6 +46,10 @@ The key to a successful ft_printf is a well-structured and good extensible code.
 * [Shell](https://unixguide.readthedocs.io/en/latest/unixcheatsheet/)
 * [gcc](https://terminaldeinformacao.com/2015/10/08/como-instalar-e-configurar-o-gcc-no-windows-mingw/)
 
- ## Author
+## Author
 
-Made by jessica Fernanda 👋 [See my linkedin](https://www.linkedin.com/in/jessica-fernanda-106651205)
+ | [<img src="https://avatars.githubusercontent.com/u/80687429?v=4" width=115><br><sub>Jessica Fernanda</sub>](https://github.com/nandajfa) |
+ | :---: |
+ 
+ [![Linkedin Badge](https://img.shields.io/badge/-Jessica-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jessica-fernanda-106651205)](https://www.linkedin.com/in/jessica-fernanda-106651205) 
+[![Gmail Badge](https://img.shields.io/badge/-nanda.jfa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nanda.jfa@gmail.com)](mailto:nanda.jfa@gmail.com)
